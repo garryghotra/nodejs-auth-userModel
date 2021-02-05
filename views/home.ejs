@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header><h1>Project</h1></header>
+    <main>
+      <section id="sec1">
+        <div>
+          <img
+            src="https://2x1dks3q6aoj44bz1r1tr92f-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/Square-face-shape-bespke-unit-Bordered-700x700.png"
+            alt="HomePic"
+            height="600px"
+            width="600px"
+          />
+        </div>
+        <div>
+          <h2>"Never regret anything that made you smile"</h2>
+          <% if(!locals.user){ %>
+          <p>Login/Sign Up with Google</p>
+          <button class="sec1-btn">
+            <a href="/auth/google"
+              ><img src="images/gbtn.png" /> Google Login / Sign Up</a
+            >
+          </button>
+          <% }else{ %>
+          <button class="sec1-btn"><a href="/profile">Profile</a></button>
+          <% } %>
+        </div>
+      </section>
+
+      <section id="sec2">
+        <h2>Fly through your interests</h2>
+        <video width="80%" controls autoplay loop preload="auto">
+          <source
+            src="https://www.w3schools.com/tags/movie.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="https://www.w3schools.com/tags/movie.mp4"
+            type="video/ogg"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section id="sec3">
+        <h2>About Us:</h2>
+        <div id="about-us-container">
+          <div>
+            <img
+              src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+            />
+            <h3>Name</h3>
+            <p>
+              "I make presentations all day long, and I could not imagine doing
+              it without Pitch. It’s the best of Slides, Keynote, and PowerPoint
+              all in one — plus things that none of these have!"
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+            />
+            <h3>Name</h3>
+            <p>
+              "I make presentations all day long, and I could not imagine doing
+              it without Pitch. It’s the best of Slides, Keynote, and PowerPoint
+              all in one — plus things that none of these have!"
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+            />
+            <h3>Name</h3>
+            <p>
+              "I make presentations all day long, and I could not imagine doing
+              it without Pitch. It’s the best of Slides, Keynote, and PowerPoint
+              all in one — plus things that none of these have!"
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+            />
+            <h3>Name</h3>
+            <p>
+              "I make presentations all day long, and I could not imagine doing
+              it without Pitch. It’s the best of Slides, Keynote, and PowerPoint
+              all in one — plus things that none of these have!"
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-col">
+        <p>Project</p>
+        <p>&#169; 2021. All Rights Reserved</p>
+      </div>
+      <div class="footer-col">
+        <p>Product</p>
+        <p>Product Tour</p>
+        <p>Priicing</p>
+        <p>Download</p>
+        <p>Whats New</p>
+      </div>
+      <div class="footer-col">
+        <p>Legal</p>
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+        <p>Legal notice</p>
+        <p>DPA</p>
+        <p>DMCA Policy</p>
+        <p>ERDF Support</p>
+      </div>
+      <div class="footer-col">
+        <p>Company</p>
+        <p>About</p>
+        <p>Blogs</p>
+        <p>Newsletter</p>
+      </div>
+      <div class="footer-col">
+        <p>Follow Us</p>
+        <p class="icon-container">
+          <i class="fa fa-twitter"></i><i class="fa fa-facebook"></i
+          ><i class="fa fa-linkedin"></i><i class="fa fa-instagram"></i>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+  outline: none;
+  letter-spacing: 0.1rem;
+}
+h2 {
+  font-size: 50px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  padding: 20px;
+  color: rgb(0, 0, 83);
+  background-color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid grey;
+  z-index: 1000;
+}
+main section {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+#sec1 {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 3px 5px rgb(128, 128, 128, 0.5);
+}
+#sec1 div {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+#sec1 div:nth-of-type(1) {
+  background-color: navy;
+  padding: 30px;
+}
+#sec1 div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  text-align: center;
+}
+#sec1 div:nth-of-type(2) > * {
+  margin-bottom: 30px;
+}
+.sec1-btn {
+  height: 4rem;
+  width: 23rem;
+
+  font-size: 1.5rem;
+  color: grey;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 3px rgba(128, 128, 128, 0.5);
+  background-color: #fff;
+}
+.sec1-btn img {
+  margin-right: 10px;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+#sec2,
+#sec3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#sec2 h2,
+#sec3 h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#about-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#about-us-container div {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background-color: rgb(246, 246, 246);
+
+  align-items: center;
+  width: 20%;
+  margin-right: 10px;
+  margin-top: 5;
+}
+#about-us-container div img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+#about-us-container div p {
+  color: grey;
+  margin-top: 5px;
+}
+
+footer {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(0, 0, 83);
+  color: white;
+  justify-content: center;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.footer-col p {
+  margin-bottom: 3px;
+}
+.footer-col p:nth-of-type(1) {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.footer-col .icon-container i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1500px) {
+  #sec1 img {
+    height: 400px;
+    width: 400px;
+  }
+  #about-us-container div {
+    width: 23%;
+    margin: 1px;
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #sec1 {
+    flex-direction: column;
+  }
+  #sec1 div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #sec1 img {
+    height: 250px;
+    width: 250px;
+  }
+  #sec1 {
+    flex-direction: column;
+  }
+  button.sec1-btn {
+    width: 90%;
+  }
+}
